@@ -6,7 +6,7 @@
 
       `npm install`
 
-2. Create a .env file with the following details:
+2. Create a `.env` file with the following details:
 
    `mongodb+srv://<username>:<password>@agesaui.71g2e4o.mongodb.net/<dbname>?retryWrites=true&w=majority`
 
