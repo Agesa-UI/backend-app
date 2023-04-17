@@ -21,7 +21,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.0.3",
+    "mongoose": "^7.0.4",
     "path": "^0.12.7",
     "sha1": "^1.1.1",
     "util": "^0.12.5"
@@ -34,11 +34,11 @@
     "@babel/register": "^7.8.0",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
-    "nodemon": "^2.0.2",
     "eslint": "^6.4.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.17.0",
+    "nodemon": "^2.0.2",
     "sinon": "^7.5.0"
   }
 }
