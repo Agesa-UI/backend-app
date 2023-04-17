@@ -7,6 +7,7 @@ const getHome = async (req, res) => {
 const getDashboard = async (req, res) => {
   res.json({ message: 'Welcome to Your Dashboard' });
 };
+
 module.exports = {
   getHome,
   getDashboard,
