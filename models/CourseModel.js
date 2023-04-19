@@ -2,10 +2,6 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const CourseSchema = new Schema({
-    lecturer: {
-        type: Schema.Types.ObjectId,
-        ref: 'User'
-    },
     owner: {
         type: Schema.Types.ObjectId,
         ref: 'User'

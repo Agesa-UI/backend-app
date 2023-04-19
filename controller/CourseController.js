@@ -18,7 +18,6 @@ class CourseController {
             course.name = req.body.name;
             course.description = req.body.description;
             course.owner = req.decoded.user._id;
-            course.lecturer = req.body.lecturer;
             await course.save();
             res.json({'Success': True, 'Course': course});
         } catch (error) {
