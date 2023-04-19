@@ -1,6 +1,8 @@
 import router from './routes';
 
 const express = require('express');
+const http = require('http').createServer(app);
+const io = require('socket.io')(http);
 const cors = require('cors');
 const dotenv = require('dotenv');
 const dbConnect = require('./config/db');
@@ -15,7 +17,15 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
-app.use('/', router)
+app.use('/', router);
+io.on('connection', (socket) => {
+  console.log('a user connected');
+
+  socket.on('disconnect', () => {
+    console.log('user disconnected');
+  });
+});
+
 
 app.listen(PORT, () => {
   dbConnect();
